@@ -187,7 +187,11 @@ button {
   color: var(--title-color);
 }
 
-.nav__logo {
+/* .logo__img{
+  margin-top: 1rem;
+} */
+
+/* .nav__logo {
   text-transform: uppercase;
   font-weight: var(--font-bold);
   letter-spacing: 1px;
@@ -198,7 +202,7 @@ button {
 
 .nav__logo-icon {
   font-size: 1.25rem;
-}
+} */
 
 .nav__btns {
   display: flex;
@@ -258,16 +262,211 @@ button {
 }
 
 /* Change background header */
+.scroll-header {
+  background-color: var(--body-color);
+  box-shadow: 0 1px 4px hsla(0, 4%, 15%, 0.1);
+}
 
 /* Active link */
 
 /*=============== HOME ===============*/
+.home__container {
+  position: relative;
+  row-gap: 2.5rem;
+}
+
+.home__img {
+  width: 100%;
+}
+
+.home__img-bg {
+  background-color: var(--first-color);
+  width: 258px;
+  height: 430px;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: flex-end;
+  transform: translateX(1.5rem);
+}
+
+.home__social {
+  position: absolute;
+  top: 35%;
+  left: -5rem;
+  transform: rotate(-90deg);
+  display: flex;
+  column-gap: 1rem;
+}
+
+.home__social-link {
+  font-size: var(--smaller-font-size);
+  color: var(--text-color-light);
+  transition: 0.3s;
+}
+
+.home__social-link:hover {
+  color: var(--title-color);
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--mb-1);
+}
+
+.home__description {
+  margin-bottom: var(--mb-1-5);
+}
+
+.home__price {
+  display: inline-block;
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-medium);
+  color: var(--first-color);
+  margin-bottom: var(--mb-3);
+}
+
+.home__btns {
+  display: flex;
+  align-items: center;
+}
+
+.home__button {
+  box-shadow: 0 12px 24px hsla(0, 0%, 10%, 0.2);
+}
 
 /*=============== BUTTONS ===============*/
+.button {
+  display: inline-block;
+  background-color: var(--button-color);
+  color: #fff;
+  padding: 1.25rem 2rem;
+  font-weight: var(--font-medium);
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: var(--button-color-alt);
+}
+
+.button--gray {
+  background-color: hsl(0, 0%, 75%);
+  color: var(--title-color);
+}
+
+.button--gray:hover {
+  background-color: hsl(0, 0%, 63%);
+}
+
+.button--small {
+  padding: 1rem 1.5rem;
+}
 
 /*=============== FEATURED ===============*/
+.featured__container {
+  row-gap: 2rem;
+}
+
+.featured__card {
+  position: relative;
+  text-align: center;
+  background-color: var(--container-color);
+  padding-top: 2rem;
+  border: 1px solid var(--border-color);
+  overflow-y: hidden;
+  transition: 0.3s;
+}
+
+.featured__tag {
+  background-color: var(--first-color);
+  padding: 0.5rem 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  position: absolute;
+  transform: rotate(-90deg);
+  left: -1rem;
+  top: 3rem;
+}
+
+.featured__img {
+  height: 214px;
+  margin-bottom: var(--mb-1);
+}
+
+.featured__title,
+.featured__price {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-bold);
+}
+
+.featured__title {
+  text-transform: uppercase;
+  margin-bottom: var(--mb-0-75);
+}
+
+.featured__price {
+  display: block;
+  color: var(--first-color);
+  transition: 0.3s;
+}
+
+.featured__button {
+  font-size: var(--small-font-size);
+  transform: translateY(1rem);
+  opacity: 0;
+}
+
+.featured__card:hover {
+  box-shadow: 0 12px 32px hsla(0, 0%, 20%, 0.1);
+  padding: 2rem 0 3rem 0;
+}
+
+.featured__card:hover .featured__button {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.featured__card:hover .featured__price {
+  margin-bottom: var(--mb-1-5);
+}
 
 /*=============== STORY ===============*/
+.story__container {
+  row-gap: 7.5rem;
+}
+
+.story__title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.story__description {
+  margin-bottom: var(--mb-2-5);
+}
+
+.story__images {
+  position: relative;
+}
+
+.story__img,
+.story__square {
+  width: 250px;
+}
+
+.story__square {
+  height: 335px;
+  background-color: var(--first-color);
+}
+
+.story__img {
+  position: absolute;
+  left: 3rem;
+  top: -3rem;
+}
 
 /*=============== PRODUCTS ===============*/
 
